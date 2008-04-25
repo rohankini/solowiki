@@ -1,0 +1,617 @@
+# Logfile created on Wed Apr 23 10:03:10 +0530 2008  [4;36;1mSQL (0.000356)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.009994)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003954)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000214)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+/!\ FAILSAFE /!\  Wed Apr 23 10:03:36 +0530 2008
+  Status: 500 Internal Server Error
+  undefined method `model' for ApplicationController:Class
+    /home/rkini/Desktop/solowiki/app/controllers/application.rb:5
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:60:in `depend_on'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:141:in `prepare_application'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Wed Apr 23 10:03:46 +0530 2008
+  Status: 500 Internal Server Error
+  undefined method `model' for ApplicationController:Class
+    /home/rkini/Desktop/solowiki/app/controllers/application.rb:5
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:60:in `depend_on'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:141:in `prepare_application'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.000366)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.032547)[0m   [0;1mUPDATE schema_info SET version = 0[0m
+/!\ FAILSAFE /!\  Wed Apr 23 15:21:43 +0530 2008
+  Status: 500 Internal Server Error
+  undefined method `model' for ApplicationController:Class
+    /home/rkini/Desktop/solowiki/app/controllers/application.rb:5
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:60:in `depend_on'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:141:in `prepare_application'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:178:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `send!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:175:in `run_callbacks'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    ./script/server:3
+/!\ FAILSAFE /!\  Wed Apr 23 15:22:10 +0530 2008
+  Status: 500 Internal Server Error
+  A secret is required to generate an integrity hash for cookie session data. Use config.action_controller.session = { :session_key => "_myapp_session", :secret => "some secret phrase of at least 30 characters" } in config/environment.rb
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/cookie_store.rb:91:in `ensure_secret_secure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session/cookie_store.rb:60:in `initialize'
+    /usr/local/lib/ruby/1.8/cgi/session.rb:273:in `new'
+    /usr/local/lib/ruby/1.8/cgi/session.rb:273:in `initialize_without_cgi_reader'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/cgi_ext/session.rb:39:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/cgi_process.rb:130:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/cgi_process.rb:130:in `session'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/cgi_process.rb:166:in `stale_session_check!'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/cgi_process.rb:114:in `session'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1131:in `assign_shortcuts_without_flash'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/flash.rb:167:in `assign_shortcuts'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:518:in `process_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:281
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    ./script/server:3
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#view (for 127.0.0.1 at 2008-04-23 18:15:07) [GET]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"action"=>"view", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+  [4;36;1mTiddler Load (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: tiddlers: SELECT * FROM tiddlers WHERE (private='f') [0m
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: tiddlers: SELECT * FROM tiddlers WHERE (private='f') ):
+    .//vendor/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+    .//vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:145:in `execute'
+    .//vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `catch_schema_changes'
+    .//vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:145:in `execute'
+    .//vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:165:in `select_all'
+    .//vendor/rails/activerecord/lib/active_record/base.rb:427:in `find_by_sql'
+    .//vendor/rails/activerecord/lib/active_record/base.rb:997:in `find_every'
+    .//vendor/rails/activerecord/lib/active_record/base.rb:418:in `find'
+    .//app/controllers/wiki_controller.rb:6:in `view'
+    .//vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `send'
+    .//vendor/rails/actionpack/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    .//vendor/rails/actionpack/lib/action_controller/filters.rb:632:in `call_filter'
+    .//vendor/rails/actionpack/lib/action_controller/filters.rb:634:in `call_filter'
+    .//vendor/rails/actionpack/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    .//vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    .//vendor/rails/actionpack/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    .//vendor/rails/actionpack/lib/action_controller/rescue.rb:83:in `perform_action'
+    .//vendor/rails/actionpack/lib/action_controller/base.rb:430:in `send'
+    .//vendor/rails/actionpack/lib/action_controller/base.rb:430:in `process_without_filters'
+    .//vendor/rails/actionpack/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    .//vendor/rails/actionpack/lib/action_controller/session_management.rb:114:in `process'
+    .//vendor/rails/actionpack/lib/action_controller/base.rb:330:in `process'
+    .//vendor/rails/railties/lib/dispatcher.rb:41:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.3/bin/mongrel_rails:281
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    .//vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    .//vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    .//vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.025314)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: tiddler_versions: DROP TABLE tiddler_versions[0m
+  [4;35;1mSQL (0.057485)[0m   [0mCREATE TABLE tiddler_versions ("id" INTEGER PRIMARY KEY NOT NULL, "tiddler_id" integer DEFAULT NULL, "version" integer DEFAULT NULL, "title" varchar(255) DEFAULT '' NOT NULL, "modifier" varchar(255) DEFAULT '' NOT NULL, "body" text DEFAULT NULL, "tags" text DEFAULT NULL, "updated_on" datetime NOT NULL, "created_on" datetime NOT NULL, "private" integer(1) DEFAULT 0) [0m
+  [4;36;1mSQL (0.003591)[0m   [0;1mCREATE INDEX "tiddler_versions_tiddler_id_index" ON tiddler_versions ("tiddler_id")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: tiddlers: DROP TABLE tiddlers[0m
+  [4;36;1mSQL (0.004293)[0m   [0;1mCREATE TABLE tiddlers ("id" INTEGER PRIMARY KEY NOT NULL, "title" varchar(255) DEFAULT '' NOT NULL, "modifier" varchar(255) DEFAULT '' NOT NULL, "body" text DEFAULT NULL, "tags" text DEFAULT NULL, "updated_on" datetime NOT NULL, "created_on" datetime NOT NULL, "private" boolean DEFAULT 'f', "version" integer DEFAULT 0) [0m
+  [4;35;1mSQL (0.004948)[0m   [0mCREATE INDEX "name" ON tiddlers ("title")[0m
+  [4;36;1mSQL (0.005345)[0m   [0;1mCREATE INDEX "created_on" ON tiddlers ("created_on")[0m
+  [4;35;1mSQL (0.004492)[0m   [0mCREATE INDEX "updated_on" ON tiddlers ("updated_on")[0m
+  [4;36;1mSQL (0.006149)[0m   [0;1mCREATE INDEX "tiddlers_private_index" ON tiddlers ("private")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.039164)[0m   [0;1mUPDATE schema_info SET version = 0[0m
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#view (for 127.0.0.1 at 2008-04-23 18:20:27) [GET]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"action"=>"view", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+  [4;36;1mTiddler Load (0.000843)[0m   [0;1mSELECT * FROM tiddlers WHERE (private='f') [0m
+Rendering wiki/show
+Completed in 0.06431 (15 reqs/sec) | Rendering: 0.01943 (30%) | DB: 0.00084 (1%) | 200 OK [http://localhost/]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-04-23 18:22:07) [GET]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"action"=>"login", "controller"=>"account"}
+DEPRECATION WARNING: @request is deprecated! Call request.post? instead of @request.post?. Args: []  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:4)
+Rendering  within layouts/application
+Rendering account/login
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: ["good"]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:10)
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: ["bad"]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:12)
+DEPRECATION WARNING: start_form_tag is deprecated and will be removed from Rails 2.0 (use form_tag instead)  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:16)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:24)
+Completed in 0.08429 (11 reqs/sec) | Rendering: 0.08268 (98%) | 200 OK [http://localhost/login]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-04-23 18:22:15) [POST]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"action"=>"login", "controller"=>"account", "user_password"=>"password"}
+DEPRECATION WARNING: @request is deprecated! Call request.post? instead of @request.post?. Args: []  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:4)
+DEPRECATION WARNING: @session is deprecated! Call session.[]= instead of @session.[]=. Args: [:user, true]  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:6)
+DEPRECATION WARNING: You called url_for(:edit_url), which is a deprecated API call. Instead you should use the named route directly, like edit_url(). Using symbols and parameters with url_for will be removed from Rails 2.0.  See http://www.rubyonrails.org/deprecation for details. (called from redirect_to at ./script/../config/../vendor/rails/actionpack/lib/action_controller/base.rb:987)
+Redirected to http://localhost:3000/edit
+Completed in 0.00150 (666 reqs/sec) | 302 Found [http://localhost/login]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#edit (for 127.0.0.1 at 2008-04-23 18:22:16) [GET]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"action"=>"edit", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+  [4;35;1mTiddler Load (0.000640)[0m   [0mSELECT * FROM tiddlers [0m
+Rendering wiki/show
+Completed in 0.01334 (74 reqs/sec) | Rendering: 0.00282 (21%) | DB: 0.00064 (4%) | 200 OK [http://localhost/edit]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-23 18:22:29) [POST]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"tiddler"=>{"body"=>"Hello", "title"=>"Test", "tags"=>"", "id"=>"New Page", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000254)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'New Page') LIMIT 1[0m
+  [4;35;1mSQL (0.000720)[0m   [0mINSERT INTO tiddlers ("created_on", "body", "title", "private", "tags", "updated_on", "modifier", "version") VALUES('2008-04-23 18:22:29', 'Hello', 'Test', 'f', '', '2008-04-23 18:22:29', 'YourName', 1)[0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mINSERT INTO tiddler_versions ("created_on", "tiddler_id", "body", "title", "private", "tags", "updated_on", "modifier", "version") VALUES('2008-04-23 18:22:29', 1, 'Hello', 'Test', 0, NULL, '2008-04-23 18:22:29', 'YourName', 1)[0m
+Completed in 0.03364 (29 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00127 (3%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-23 18:22:36) [POST]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"tiddler"=>{"body"=>"||Hello||", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000552)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000729)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000524)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 1, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-23 18:22:36', "body" = '||Hello||', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.04148 (24 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00180 (4%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-23 18:22:41) [POST]
+  Session ID: 97a9bdb848b213e5e2af8bedbfd86860
+  Parameters: {"tiddler"=>{"body"=>"||Hello||\\nsd\\nf\\nsdf\\nsd\\nf", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000424)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000571)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mTiddler Update (0.000354)[0m   [0;1mUPDATE tiddlers SET "tags" = '', "version" = 1, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-23 18:22:41', "body" = '||Hello||\nsd\nf\nsdf\nsd\nf', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02370 (42 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00135 (5%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#view (for 127.0.0.1 at 2008-04-24 13:05:01) [GET]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"action"=>"view", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+  [4;36;1mTiddler Load (0.001020)[0m   [0;1mSELECT * FROM tiddlers WHERE (private='f') [0m
+Rendering wiki/show
+Completed in 0.09813 (10 reqs/sec) | Rendering: 0.01078 (10%) | DB: 0.00102 (1%) | 200 OK [http://localhost/]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-04-24 13:05:21) [GET]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"action"=>"login", "controller"=>"account"}
+DEPRECATION WARNING: @request is deprecated! Call request.post? instead of @request.post?. Args: []  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:4)
+Rendering  within layouts/application
+Rendering account/login
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: ["good"]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:10)
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: ["bad"]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:12)
+DEPRECATION WARNING: start_form_tag is deprecated and will be removed from Rails 2.0 (use form_tag instead)  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:16)
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47account47login46rhtml at script/../config/../app/views/account/login.rhtml:24)
+Completed in 0.00825 (121 reqs/sec) | Rendering: 0.00698 (84%) | 200 OK [http://localhost/login]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2008-04-24 13:05:23) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"action"=>"login", "controller"=>"account", "user_password"=>"password"}
+DEPRECATION WARNING: @request is deprecated! Call request.post? instead of @request.post?. Args: []  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:4)
+DEPRECATION WARNING: @session is deprecated! Call session.[]= instead of @session.[]=. Args: [:user, true]  See http://www.rubyonrails.org/deprecation for details. (called from login at ./script/../config/../app/controllers/account_controller.rb:6)
+DEPRECATION WARNING: You called url_for(:edit_url), which is a deprecated API call. Instead you should use the named route directly, like edit_url(). Using symbols and parameters with url_for will be removed from Rails 2.0.  See http://www.rubyonrails.org/deprecation for details. (called from redirect_to at ./script/../config/../vendor/rails/actionpack/lib/action_controller/base.rb:987)
+Redirected to http://localhost:3000/edit
+Completed in 0.00160 (626 reqs/sec) | 302 Found [http://localhost/login]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#edit (for 127.0.0.1 at 2008-04-24 13:05:23) [GET]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"action"=>"edit", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+  [4;35;1mTiddler Load (0.000723)[0m   [0mSELECT * FROM tiddlers [0m
+Rendering wiki/show
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00489 (32%) | DB: 0.00072 (4%) | 200 OK [http://localhost/edit]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:05:29) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"sdlkjlsdf\\nsdf\\nsdf\\nsd\\nf", "title"=>"GettingStarted", "tags"=>"", "id"=>"GettingStarted", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000232)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'GettingStarted') LIMIT 1[0m
+  [4;35;1mSQL (0.000598)[0m   [0mINSERT INTO tiddlers ("created_on", "body", "title", "private", "tags", "updated_on", "modifier", "version") VALUES('2008-04-24 13:05:29', 'sdlkjlsdf\nsdf\nsdf\nsd\nf', 'GettingStarted', 'f', '', '2008-04-24 13:05:29', 'YourName', 1)[0m
+  [4;36;1mSQL (0.000262)[0m   [0;1mINSERT INTO tiddler_versions ("created_on", "tiddler_id", "body", "title", "private", "tags", "updated_on", "modifier", "version") VALUES('2008-04-24 13:05:29', 2, 'sdlkjlsdf\nsdf\nsdf\nsd\nf', 'GettingStarted', 0, NULL, '2008-04-24 13:05:29', 'YourName', 1)[0m
+Completed in 0.03303 (30 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00109 (3%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:05:40) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"sdlkjlsdf\\nsdf\\n!sdf!\\nsd\\nf", "title"=>"GettingStarted", "tags"=>"", "id"=>"GettingStarted", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000368)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'GettingStarted') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000562)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 2) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000384)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 1, "private" = 'f', "title" = 'GettingStarted', "updated_on" = '2008-04-24 13:05:40', "body" = 'sdlkjlsdf\nsdf\n!sdf!\nsd\nf', "modifier" = 'YourName', "created_on" = '2008-04-24 13:05:29' WHERE "id" = 2[0m
+Completed in 0.03006 (33 reqs/sec) | Rendering: 0.00009 (0%) | DB: 0.00131 (4%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:06:16) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000410)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000590)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mSQL (0.014465)[0m   [0;1mSELECT MAX(version)+1 AS next_version FROM tiddler_versions WHERE tiddler_id = 1[0m
+  [4;35;1mTiddler Update (0.001494)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:06:16', "body" = '', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mINSERT INTO tiddler_versions ("created_on", "tiddler_id", "body", "title", "private", "tags", "updated_on", "modifier", "version") VALUES('2008-04-23 18:22:29', 1, NULL, 'Test', 0, NULL, '2008-04-24 13:06:16', 'YourName', 2)[0m
+Completed in 0.05204 (19 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.01720 (33%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:06:22) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"", "title"=>"GettingStarted", "tags"=>"", "id"=>"GettingStarted", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000404)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'GettingStarted') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000616)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 2) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000503)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 1, "private" = 'f', "title" = 'GettingStarted', "updated_on" = '2008-04-24 13:06:23', "body" = '', "modifier" = 'YourName', "created_on" = '2008-04-24 13:05:29' WHERE "id" = 2[0m
+Completed in 0.03072 (32 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00152 (4%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:07:48) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' &gt;&gt;", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000557)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000833)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mTiddler Update (0.000485)[0m   [0;1mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:07:49', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' &gt;&gt;', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.08899 (11 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00187 (2%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:07:56) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' &gt;&gt;", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000424)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000752)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000445)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:07:56', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' &gt;&gt;', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02469 (40 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00162 (6%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:08:19) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' WikiStats 'Options' 'View your options' OptionsPanel 'Missing' 'View pages that you need to add' TabMoreMissing 'Orphans' 'View pages that no longer have links to them' TabMoreOrphans  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000383)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000639)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mTiddler Update (0.000411)[0m   [0;1mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:08:20', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' WikiStats ''Options'' ''View your options'' OptionsPanel ''Missing'' ''View pages that you need to add'' TabMoreMissing ''Orphans'' ''View pages that no longer have links to them'' TabMoreOrphans &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02481 (40 reqs/sec) | Rendering: 0.00009 (0%) | DB: 0.00143 (5%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:08:44) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' WikiStats  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000416)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000746)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.009225)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:08:44', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' WikiStats &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.07635 (13 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.01039 (13%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:09:33) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' New Page  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000370)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000682)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mTiddler Update (0.000354)[0m   [0;1mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:09:33', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' New Page &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02536 (39 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00141 (5%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:09:44) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' WikiStats  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000433)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000758)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000435)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:09:44', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' WikiStats &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02683 (37 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00163 (6%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:10:06) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' Test  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;36;1mTiddler Load (0.000397)[0m   [0;1mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;35;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000728)[0m   [0mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;36;1mTiddler Update (0.001267)[0m   [0;1mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:10:06', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' Test &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02738 (36 reqs/sec) | Rendering: 0.00028 (1%) | DB: 0.00239 (8%) | 200 OK [http://localhost/wiki/save]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../app/controllers/application.rb:5)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at ./script/../config/../vendor/rails/actionpack/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing WikiController#save (for 127.0.0.1 at 2008-04-24 13:10:13) [POST]
+  Session ID: 03a403c79f2b2bfe4e90a24466459a72
+  Parameters: {"tiddler"=>{"body"=>"&lt;&lt;tabs txtWikiControlPanel 'Statistics' 'View interesting statistics about this wiki' WikiStats  &gt;&gt;\\n", "title"=>"Test", "tags"=>"", "id"=>"Test", "modifier"=>"YourName"}, "action"=>"save", "controller"=>"wiki"}
+DEPRECATION WARNING: The inferred foreign_key name will change in Rails 2.0 to use the association name instead of its class name when they differ.  When using :class_name in belongs_to, use the :foreign_key option to explicitly set the key name to avoid problems in the transition.  See http://www.rubyonrails.org/deprecation for details. (called from acts_as_versioned at (eval):3)
+DEPRECATION WARNING: @params is deprecated! Call params.[] instead of @params.[]. Args: [:tiddler]  See http://www.rubyonrails.org/deprecation for details. (called from save at ./script/../config/../app/controllers/wiki_controller.rb:16)
+  [4;35;1mTiddler Load (0.000364)[0m   [0mSELECT * FROM tiddlers WHERE (tiddlers."title" = 'Test') LIMIT 1[0m
+  [4;36;1mActiveRecord::Acts::Versioned::TiddlerVersion Load (0.000666)[0m   [0;1mSELECT * FROM tiddler_versions WHERE (tiddler_versions.tiddler_id = 1) ORDER BY version[0m
+  [4;35;1mTiddler Update (0.000354)[0m   [0mUPDATE tiddlers SET "tags" = '', "version" = 2, "private" = 'f', "title" = 'Test', "updated_on" = '2008-04-24 13:10:13', "body" = '&lt;&lt;tabs txtWikiControlPanel ''Statistics'' ''View interesting statistics about this wiki'' WikiStats &gt;&gt;\n', "modifier" = 'YourName', "created_on" = '2008-04-23 18:22:29' WHERE "id" = 1[0m
+Completed in 0.02952 (33 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00138 (4%) | 200 OK [http://localhost/wiki/save]
